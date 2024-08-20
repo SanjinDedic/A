@@ -4,11 +4,17 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   background-color: #f4f4f4;
   color: #333;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -18,16 +24,21 @@ header {
   padding: 1rem;
 }
 
+.content-wrapper {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
 main {
   padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  max-width: 1200px; /* Limit the maximum width of the grid */
-  margin: 0 auto; /* Center the grid */
 }
 
 .project-card {
@@ -84,7 +95,7 @@ footer {
   color: #fff;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
+  flex-shrink: 0;
 }
 
 @media (min-width: 769px) {
