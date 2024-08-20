@@ -40,3 +40,7 @@ npm-debug.log*
 
 # Ignore yarn error log
 yarn-error.log
+
+#prompt generation
+code_documentation.md
+gen_prompt.py
