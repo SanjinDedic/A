@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.I. Recipe Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>A.I. Recipe Generator</h1>
+        <form id="ingredientsForm">
+            <fieldset class="pantryIngredients">
+                <legend>Pantry Ingredients</legend>
+                <!-- Using JS to dynamically add pantry ingredients - see pantry-ingredients.js -->
+            </fieldset>
+
+            <fieldset class="additionalIngredients">
+                <legend>Additional Ingredients</legend>
+                <div id="customIngredientContainer">
+                    <input type="text" id="customIngredient" placeholder="Add your ingredient" />
+                    <button type="button" id="addIngredient">+</button>
+                </div>
+            </fieldset>
+            <label for="timeAvailable">Time Available:
+                <input type="range" id="timeAvailable" name="timeAvailable" min="10" max="120" value="60">
+                <span id="timeValue">60</span> minutes
+            </label>
+
+            <label for="cuisine">Choose a cuisine:
+                <select id="cuisine" name="cuisine"></select>
+                <!-- Using JS to dynamically add cuisine - see cuisines.js -->
+            </label>
+            <button type="button" id="requestRecipes">Request Recipes</button>
+            <button type="button" id="requestRecipesFake">Request Recipes Fake</button>
+            <button type="button" id="requestRecipesDirect">Request Recipes Direct API</button>
+        </form>
+
+
+        <div id="recipeResult" style="margin-top: 20px;">
+            <h2 id="recipeTitle"></h2>
+            <div id="recipeIngredients"></div>
+            <div id="recipeInstructions"></div>
+
+            <div id="refineRecipe" style="display:none;">
+                <input type="text" id="refineText" placeholder="Request changes" />
+                <button type="button" id="refineRecipeButton">Refine Recipe</button>
+            </div>
+        </div>
+
+        <div id="spinner-container"></div>
+        
+        <div id="recipeImage" style="margin-top: 20px;"></div>
+
+    </div>
+
+    <script type="module" src="main.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Powered Quiz Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="appContainer">
+        <div id="startContainer">
+            <h1>AI-Powered Quiz Generator</h1>
+            <button id="startBtn">Start Financial Literacy Quiz</button>
+            <button id="startCustomBtn">Start Custom Quiz</button>
+            <input type="text" id="customQuiz" placeholder="Enter prompt for your custom quiz">
+        </div>
+        <div id="quizContainer">
+            <h1 id="quizTitle">Financial Literacy Quiz</h1>
+            <div id="questionContainer"></div>
+            <button id="nextBtn">Next</button>
+            <div id="result"></div>
+        </div>
+        <div id="feedbackContainer"></div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>

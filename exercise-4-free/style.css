@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #f0f0f0; /* A light background for the fitness theme */
+}
+
+/* Container Styling */
+.container {
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white; /* White container on light background */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+/* Default Fieldset Styling */
+fieldset {
+    margin-bottom: 20px;
+    border: 1px solid #ddd; /* Light border */
+    padding: 15px;
+}
+
+
+/* Specific styling for Pantry Ingredients to apply grid layout */
+.pantryIngredients {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Creates a responsive grid layout for ingredients */
+    gap: 10px; /* Gap between grid items */
+}
+
+/* Label Styling */
+label {
+    display: block; /* Ensures labels are displayed one after another vertically */
+    margin-top: 5px;
+}
+
+/* Button Styling */
+button {
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Range Input Styling */
+#timeAvailable {
+    width: 100%;
+}
+
+/* Text Input Styling */
+input[type="text"] {
+    margin-right: 5px;
+}

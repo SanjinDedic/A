@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Study Quiz Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.10.377/pdf.worker.min.js"></script>
+</head>
+<body>
+    <div id="controlsContainer">
+        <h1>AI Study Quiz Generator</h1>
+        <div class="buttonContainerLoad">
+            <input type="file" id="pdfUploader" accept="application/pdf" />
+            <button id="loadPdf">Load PDF</button>
+        </div>
+
+        <div id="pdfContent"></div>
+        <div id="pageInfo"></div>
+
+        <div class="buttonContainerBrowse">
+            <button id="prevPage">Previous Page</button>
+            <button id="nextPage">Next Page</button>
+        </div>
+
+        <div class="sliderContainer">
+            <label for="numQuestions">Number of Questions:</label>
+            <input type="range" id="numQuestions" min="1" max="20" value="10" oninput="this.nextElementSibling.value = this.value">
+            <output id="numQuestionsOutput">10</output>
+        </div>
+
+        <button id="generateQuiz">Generate Quiz</button>
+
+        <div id="loading-animation" style="display: none;">
+            <div class="spinner"></div>
+            <p>Generating quiz...</p>
+        </div>
+
+        <div id="quiz-container" style="display: none;">
+            <h1 id="quiz-title">MODIFY THIS TITLE</h1>
+            <div id="question-container"></div>
+            <button id="next-btn">Next</button>
+            <div id="result"></div>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>

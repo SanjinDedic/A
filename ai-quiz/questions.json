@@ -1,0 +1,118 @@
+[
+{
+    "questions_no": 10,
+    "question_type": "mcq",
+    "questions": [
+      {
+        "question_content": "What is the first step in creating a budget?",
+        "options": [
+          "Estimating monthly expenses",
+          "Tracking past spending",
+          "Setting financial goals",
+          "Choosing a budgeting app"
+        ],
+        "answer": "Setting financial goals",
+        "comment": "Setting financial goals is crucial as it provides a target for your budgeting efforts. Knowing what you're saving for—whether it's retirement, a vacation, or an emergency fund—helps guide how you allocate your resources."
+      },
+      {
+        "question_content": "Which of the following is a benefit of using a budget?",
+        "options": [
+          "It eliminates the need to save",
+          "It increases your expenses",
+          "It helps manage your money",
+          "It complicates financial decisions"
+        ],
+        "answer": "It helps manage your money",
+        "comment": "A budget is a tool for managing your money more effectively. It helps you keep track of how much money you have, where it goes, and how much you need to save for future expenses."
+      },
+      {
+        "question_content": "What percentage of your income is recommended to save according to the 50/30/20 budgeting rule?",
+        "options": [
+          "20%",
+          "30%",
+          "50%",
+          "60%"
+        ],
+        "answer": "20%",
+        "comment": "According to the 50/30/20 rule, it's recommended to save 20% of your income. This rule suggests allocating 50% of your income to necessities, 30% to wants, and 20% to savings."
+      },
+      {
+        "question_content": "Which type of expense should be prioritized in your budget?",
+        "options": [ 
+          "Entertainment",
+          "Dining out",
+          "Essentials like rent and groceries",
+          "Vacations"
+        ],
+        "answer": "Essentials like rent and groceries",
+        "comment": "Prioritizing essential expenses ensures that your basic needs, such as housing and food, are covered before spending on non-essential items."
+      },
+      {
+        "question_content": "What is a flexible expense?",
+        "options": [
+          "Mortgage or rent payments",
+          "Grocery shopping",
+          "Insurance premiums",
+          "Dining out"
+        ],
+        "answer": "Dining out",
+        "comment": "Flexible expenses, like dining out, vary from month to month and can be adjusted based on your financial situation. Unlike fixed expenses, they are not mandatory and can be minimized to save money."
+      },
+      {
+        "question_content": "How can you track your spending effectively?",
+        "options": [
+          "Checking your bank balance once a month",
+          "Using only cash for all purchases",
+          "Keeping a written or digital record of every purchase",
+          "Estimating expenses at the end of the month"
+        ],
+        "answer": "Keeping a written or digital record of every purchase",
+        "comment": "Tracking every purchase helps you understand where your money goes and identifies areas where you can cut back. It's essential for sticking to a budget and achieving financial goals."
+      },
+      {
+        "question_content": "Why is it important to have a category for savings in your budget?",
+        "options": [
+          "To prepare for unexpected expenses",
+          "To ensure you can afford luxury items",
+          "To make budgeting more complex",
+          "To impress others with your financial savvy"
+        ],
+        "answer": "To prepare for unexpected expenses",
+        "comment": "Having a savings category helps you build an emergency fund to cover unexpected expenses, reducing the need for debt and providing financial security."
+      },
+      {
+        "question_content": "What should you do if your expenses exceed your income?",
+        "options": [
+          "Ignore the problem and continue spending",
+          "Borrow money to cover the difference",
+          "Adjust your budget to reduce unnecessary expenses",
+          "Increase your income by taking on more debt"
+        ],
+        "answer": "Adjust your budget to reduce unnecessary expenses",
+        "comment": "If your expenses exceed your income, it's important to adjust your budget by reducing unnecessary expenses. This may involve cutting back on discretionary spending to balance your budget."
+      },
+      {
+        "question_content": "Which app feature is most useful for budgeting?",
+        "options": [
+          "Social media integration",
+          "Real-time spending alerts",
+          "Game-like challenges",
+          "Celebrity endorsements"
+        ],
+        "answer": "Real-time spending alerts",
+        "comment": "Real-time spending alerts can help you stay on top of your budget by notifying you when you're about to exceed your limits, encouraging mindful spending."
+      },
+      {
+        "question_content": "Why might it be helpful to review and adjust your budget regularly?",
+        "options": [
+          "Your financial situation and goals never change",
+          "It's a requirement by financial institutions",
+          "To ensure it reflects changes in income and expenses",
+          "To make it more complicated over time"
+        ],
+        "answer": "To ensure it reflects changes in income and expenses",
+        "comment": "Regular reviews and adjustments to your budget are necessary because your financial situation and goals can change over time. This ensures your budget remains effective and aligned with your current needs."
+      }
+    ]
+  }
+]

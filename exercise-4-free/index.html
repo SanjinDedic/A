@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fitness For Free</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Fitness For Free</h1>
+    <form id="fitnessForm">
+        <fieldset class="environmentItems">
+            <legend>Environment Items</legend>
+            <label><input type="checkbox" name="item" value="Walking Track" checked> Walking Track</label>
+            <label><input type="checkbox" name="item" value="Exercise Mat" checked> Exercise Mat</label>
+            <label><input type="checkbox" name="item" value="Stairs" checked> Stairs</label>
+            <label><input type="checkbox" name="item" value="Heavy Backpack" checked> Heavy Backpack</label>
+            <label><input type="checkbox" name="item" value="Monkey Bars" checked> Monkey Bars</label>
+            <label><input type="checkbox" name="item" value="Hills" checked> Hills to run up</label>
+            <label><input type="checkbox" name="item" value="Park Bench" checked> Park Bench</label>
+        </fieldset>
+        
+        <fieldset class="additionalItems">
+            <legend>Additional Items</legend>
+            <div id="customItemContainer">
+                <input type="text" id="customItem" placeholder="Add your item" />
+                <button type="button" id="addItem">+</button>
+            </div>
+        </fieldset>
+        <label for="timeAvailable">Time Available:
+            <input type="range" id="timeAvailable" name="timeAvailable" min="10" max="120" value="60">
+            <span id="timeValue">60</span> minutes
+        </label>
+
+        <label for="intensity">Choose an intensity:
+            <select id="intensity" name="intensity">
+                <option value="low">Low Intensity</option>
+                <option value="medium">Medium Intensity</option>
+                <option value="high">High Intensity</option>
+            </select>
+        </label>
+        <button type="button" id="requestWorkouts">Request Workouts</button>
+    </form>
+
+
+<div id="workoutResult" style="margin-top: 20px;">
+    <h2 id="workoutTitle"></h2>
+    <div id="workoutItems"></div>
+    <div id="workoutInstructions"></div>
+
+    <div id="refineWorkout" style="display:none;">
+        <input type="text" id="refineText" placeholder="Request changes" />
+        <button type="button" id="refineWorkoutButton">Refine Workout</button>
+    </div>
+</div>
+
+<div id="workoutImage" style="margin-top: 20px;"></div>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

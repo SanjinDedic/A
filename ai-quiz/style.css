@@ -1,0 +1,83 @@
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --background-color: #f9f9f9;
+    --text-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+#appContainer {
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#questionContainer {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin: 10px 0;
+}
+
+#nextBtn {
+    display: none;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#nextBtn:hover {
+    background-color: var(--secondary-color);
+}
+
+.optionInput {
+    margin-right: 10px;
+}
+
+.optionLabel {
+    cursor: pointer;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#startBtn, #startCustomBtn {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#startBtn:hover, #startCustomBtn:hover {
+    background-color: var(--secondary-color);
+}
+
+#customQuiz {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}

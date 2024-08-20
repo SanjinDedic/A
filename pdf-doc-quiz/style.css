@@ -1,0 +1,172 @@
+body {
+    font-family: Arial, sans-serif; /* Use Arial as the default font */
+    background-color: #f4f4f4; /* Light grey background for contrast */
+    color: #333; /* Dark grey text for readability */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+
+#controlsContainer, #quizContainer {
+    width: 900px; /* Match the PDF content width */
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.buttonContainerLoad, .buttonContainerBrowse {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sliderContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="range"] {
+    flex-grow: 1; /* Make slider stretch to the width of the container */
+}
+
+output#numQuestionsOutput {
+    padding: 0 10px;
+}
+
+#quiz-container, #pdfContent {
+    width: 90%; /* Use the full width of the controls container */
+    margin-top: 5%;
+    padding: 5%;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 1000px;
+}
+
+/* Rest of the CSS remains the same */
+
+
+button {
+    background-color: #00c498; /* Teal background for buttons */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #008f76; /* Darker teal on hover */
+}
+
+#pageInfo {
+    color: #9938cb; /* Purple for page information */
+}
+
+input[type="file"] {
+    border: 2px dashed #cf9f13; /* Gold border for the file input */
+    padding: 10px;
+    background-color: #fafafa; /* Very light grey for contrast */
+    margin-bottom: 15px;
+}
+
+#quizContent {
+    background-color: #ffffff; /* White background for quiz content */
+    padding: 15px;
+    margin-top: 15px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1); /* Soft shadow for depth */
+}
+
+/* Additional styling for improved aesthetics */
+h1, h2, h3, h4, h5, h6 {
+    color: #9938cb; /* Purple for headings */
+}
+
+
+.quiz-question {
+    margin-bottom: 20px;
+}
+
+.quiz-question label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.quiz-choices {
+    margin-top: 10px; 
+}
+
+
+/* Quiz Container Styles */
+#quiz-container {
+    display: block; /* Changes display to make it visible */
+    border-radius: 8px; /* Adds rounded corners for consistency */
+    text-align: left; /* Aligns text to the left for readability */
+}
+
+#quiz-title {
+    margin-bottom: 20px; /* Adds space below the title for separation */
+}
+
+#question-container {
+    margin-bottom: 20px; /* Adds space between questions */
+}
+
+#next-btn {
+    display: inline-block; /* Allows the button to size according to its content */
+    width: auto; /* Auto width to fit content plus padding */
+}
+
+#result {
+    font-weight: bold; /* Makes the result text bold for emphasis */
+    color: #008f76; /* Teal color for a consistent scheme */
+    margin-top: 20px; /* Adds space above the result for separation */
+}
+
+/* Enhancements for Interactive Elements */
+input[type="file"]:hover, button:hover {
+    opacity: 0.9; /* Slightly lowers opacity on hover for a feedback effect */
+}
+
+
+
+#loading-animation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 9999;
+}
+
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+#pdfContent {
+    width: 100%;
+    overflow: auto;
+    max-width: 900px; /* or whatever maximum width you prefer */
+    margin: 0 auto;
+}

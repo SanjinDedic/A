@@ -1,0 +1,42 @@
+# Ignore all apikey.txt files in any directory
+**/apikey.txt
+
+# Ignore node_modules directories
+node_modules/
+
+# Ignore logs
+*.log
+
+# Ignore .env files which might contain sensitive information
+.env
+
+# Ignore .DS_Store files on macOS
+.DS_Store
+
+# Ignore Visual Studio Code settings
+.vscode/
+
+# Ignore build output directories
+dist/
+build/
+
+# Ignore coverage directory used by tools like istanbul
+coverage/
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore IDE-specific files
+.idea/
+*.swp
+*.swo
+
+# Ignore npm debug log
+npm-debug.log*
+
+# Ignore yarn integrity file
+.yarn-integrity
+
+# Ignore yarn error log
+yarn-error.log
