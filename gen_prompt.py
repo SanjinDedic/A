@@ -83,4 +83,4 @@ def generate_markdown(current_folder_only=False):
 
 if __name__ == "__main__":
     # You can change this to True to only document the current folder
-    generate_markdown(current_folder_only=True)
+    generate_markdown(current_folder_only=False)
